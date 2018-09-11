@@ -1,0 +1,17 @@
+.slogan {
+	float: left;
+	max-width: 490px;
+	margin-top: 150px;
+	color: #fff;
+	&__title {
+		text-transform: uppercase;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 1.7;
+		margin-bottom: 20px;
+	}
+	&__text {
+		font-family: "Freestyle Script";
+		font-size: 40px;
+	}
+}
