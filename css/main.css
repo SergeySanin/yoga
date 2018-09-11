@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans"), local("OpenSans"), url("../assets/fonts/opensans.woff2") format("woff2"), url("../assets/fonts/opensans.woff") format("woff"), url("../assets/fonts/opensans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("../assets/fonts/opensansitalic.woff2") format("woff2"), url("../assets/fonts/opensansitalic.woff") format("woff"), url("../assets/fonts/opensansitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("../assets/fonts/opensanssemibold.woff2") format("woff2"), url("../assets/fonts/opensanssemibold.woff") format("woff"), url("../assets/fonts/opensanssemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../assets/fonts/opensansbold.woff2") format("woff2"), url("../assets/fonts/opensansbold.woff") format("woff"), url("../assets/fonts/opensansbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url("../assets/fonts/ChampagneLimousines-Bold.woff2") format("woff2"), url("../assets/fonts/ChampagneLimousines-Bold.woff") format("woff"), url("../assets/fonts/ChampagneLimousines-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../assets/fonts/ProximaNova-Extrabld.woff2") format("woff2"), url("../assets/fonts/ProximaNova-Extrabld.woff") format("woff"), url("../assets/fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Freestyle Script';
+  src: url("../assets/fonts/FreestyleScript-Regular.woff2") format("woff2"), url("../assets/fonts/FreestyleScript-Regular.woff") format("woff"), url("../assets/fonts/FreestyleScript-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif, Arial;
+  font-size: 18px; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.container {
+  width: 1170px;
+  margin: 0 auto; }
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  font-weight: 600;
+  font-size: 14px; }
+  .header__logo {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+  .header__navigation {
+    width: 810px;
+    margin: 0 auto; }
+  .header__item {
+    list-style: none;
+    display: inline-block;
+    position: relative; }
+    .header__item--float-left {
+      float: left;
+      margin-right: 30px; }
+    .header__item--float-right {
+      float: right;
+      margin-left: 30px; }
+  .header__link {
+    text-decoration: none;
+    color: #555555; }
+    .header__link::after {
+      content: "";
+      width: 30px;
+      height: 1px;
+      background-color: #5363db;
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      opacity: 0; }
+    .header__link:hover {
+      color: #5363db;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+      .header__link:hover::after {
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        opacity: 1; }
