@@ -1,0 +1,41 @@
+.card {
+	width: 48%;
+	height: 300px;
+	border-radius: 5px;
+	padding-left: 300px;
+	padding-top: 45px;
+	padding-right: 15px;
+	padding-bottom: 45px;
+	background-size: 47% 100%;
+	text-align: left;
+	font-size: 14px;
+	margin-bottom: 25px;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	&--photo-health {
+		background: url(../assets/images/health.jpg) no-repeat left top;
+	}
+	&--photo-weight {
+		background: url(../assets/images/weight.jpg) no-repeat left top;		
+	}
+	&--photo-children {
+		background: url(../assets/images/children.jpg) no-repeat left top;		
+	}
+	&--photo-elderly {
+		background: url(../assets/images/elderly.jpg) no-repeat left top;		
+	}
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 20px;
+		margin-bottom: 35px;
+	}
+	&__text {
+		margin-bottom: 15px;
+		color: #555555;
+		max-width: 223px;
+	}
+	&__author {
+		color: #999999;
+	}
+}

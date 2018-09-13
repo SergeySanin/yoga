@@ -185,3 +185,72 @@ body {
   .slogan__text {
     font-family: "Freestyle Script";
     font-size: 40px; }
+
+.programs {
+  height: 1030px;
+  padding-top: 125px;
+  padding-bottom: 80px;
+  color: #777; }
+  .programs__title {
+    text-transform: uppercase;
+    color: #5b6ceb;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center; }
+  .programs__subtitle {
+    font-family: 'Freestyle Script';
+    font-size: 41px;
+    text-align: center; }
+  .programs__wrapper {
+    margin-top: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+            justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+.card {
+  width: 48%;
+  height: 300px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding-left: 300px;
+  padding-top: 45px;
+  padding-right: 15px;
+  padding-bottom: 45px;
+  background-size: 47% 100%;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+  .card--photo-health {
+    background: url(../assets/images/health.jpg) no-repeat left top; }
+  .card--photo-weight {
+    background: url(../assets/images/weight.jpg) no-repeat left top; }
+  .card--photo-children {
+    background: url(../assets/images/children.jpg) no-repeat left top; }
+  .card--photo-elderly {
+    background: url(../assets/images/elderly.jpg) no-repeat left top; }
+  .card__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 35px; }
+  .card__text {
+    margin-bottom: 15px;
+    color: #555555;
+    max-width: 223px; }
+  .card__author {
+    color: #999999; }
