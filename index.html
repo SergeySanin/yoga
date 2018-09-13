@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Yoga</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/lightcase.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<header class="header">
@@ -77,6 +78,64 @@
 				</div>
 			</div>
 		</div>
-	</section>	
+	</section>
+	<section class="gallery">
+		<a href="assets/images/gallery/image1.jpg" data-rel="lightcase:myCollection" class="gallery__link">
+			<img src="assets/images/gallery/image1.jpg" alt="photo" class="gallery__image">
+			<span class="gallery__link-bg">
+				<span class="gallery__look-icon"></span>
+			</span>
+		</a>
+		<a href="assets/images/gallery/image2.jpg" data-rel="lightcase:myCollection" class="gallery__link">
+			<img src="assets/images/gallery/image2.jpg" alt="photo" class="gallery__image">
+			<span class="gallery__link-bg">
+				<span class="gallery__look-icon"></span>
+			</span>
+		</a>
+		<a href="assets/images/gallery/image3.jpg" data-rel="lightcase:myCollection" class="gallery__link">
+			<img src="assets/images/gallery/image3.jpg" alt="photo" class="gallery__image">
+			<span class="gallery__link-bg">
+				<span class="gallery__look-icon"></span>
+			</span>
+		</a>
+		<a href="assets/images/gallery/image4.jpg" data-rel="lightcase:myCollection" class="gallery__link">
+			<img src="assets/images/gallery/image4.jpg" alt="photo" class="gallery__image">
+			<span class="gallery__link-bg">
+				<span class="gallery__look-icon"></span>
+			</span>
+		</a>
+		<a href="assets/images/gallery/image5.jpg" data-rel="lightcase:myCollection" class="gallery__link">
+			<img src="assets/images/gallery/image5.jpg" alt="photo" class="gallery__image">
+			<span class="gallery__link-bg">
+				<span class="gallery__look-icon"></span>
+			</span>
+		</a>
+		<a href="assets/images/gallery/image6.jpg" data-rel="lightcase:myCollection" class="gallery__link">
+			<img src="assets/images/gallery/image6.jpg" alt="photo" class="gallery__image">
+			<span class="gallery__link-bg">
+				<span class="gallery__look-icon"></span>
+			</span>
+		</a>
+		<a href="assets/images/gallery/image7.jpg" data-rel="lightcase:myCollection" class="gallery__link">
+			<img src="assets/images/gallery/image7.jpg" alt="photo" class="gallery__image">
+			<span class="gallery__link-bg">
+				<span class="gallery__look-icon"></span>
+			</span>
+		</a>
+		<a href="assets/images/gallery/image8.jpg" data-rel="lightcase:myCollection" class="gallery__link">
+			<img src="assets/images/gallery/image8.jpg" alt="photo" class="gallery__image">
+			<span class="gallery__link-bg">
+				<span class="gallery__look-icon"></span>
+			</span>
+		</a>
+	</section>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lightcase.js"></script>
+	<script type="text/javascript" src="js/jquery.events.touch.js"></script>
+	<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('a[data-rel^=lightcase]').lightcase();
+	});
+</script>
 </body>
 </html>
