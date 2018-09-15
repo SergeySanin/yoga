@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0">
 	<title>Yoga</title>
 	<link rel="stylesheet" type="text/css" href="css/lightcase.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -129,13 +132,28 @@
 			</span>
 		</a>
 	</section>
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/lightcase.js"></script>
-	<script type="text/javascript" src="js/jquery.events.touch.js"></script>
-	<script type="text/javascript">
+	<section class="about">
+		<div class="container clearfix">
+			<div class="about__description">
+				<h2 class="about__title">About us</h2>
+				<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum loting sokui.</p>
+			</div>
+			<div class="slider">
+		    <div class="slick-slide"><img src="assets/images/slide1.jpg" alt="Photo"></div>
+		    <div class="slick-slide"><img src="assets/images/slide1.jpg" alt="Photo"></div>
+		    <div class="slick-slide"><img src="assets/images/slide1.jpg" alt="Photo"></div>
+			</div>
+		</div>
+	</section>
+	<script src="js/jquery.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/lightcase.js"></script>
+	<script src="js/jquery.events.touch.js"></script>
+	<script>
 	jQuery(document).ready(function($) {
 		$('a[data-rel^=lightcase]').lightcase();
 	});
 </script>
+<script> $('.slider').slick();</script>
 </body>
 </html>
