@@ -1,0 +1,43 @@
+.advantage {
+	padding-top: 100px;
+	margin-bottom: 50px;
+	width: 23%;
+	background: red;
+	font-weight: 700;
+	text-align: center;
+	&--health {
+		background: url(../assets/images/health.png) no-repeat center top;
+	}
+	&--concentration {
+		background: url(../assets/images/concentration.png) no-repeat center top;
+	}
+	&--mind {
+		background: url(../assets/images/mind.png) no-repeat center top;
+	}
+	&--sleep {
+		background: url(../assets/images/sleep.png) no-repeat center top;
+	}
+	&--weight {
+		background: url(../assets/images/weight.png) no-repeat center top;
+	}
+	&--bones {
+		background: url(../assets/images/bones.png) no-repeat center top;
+	}
+	&--flex {
+		background: url(../assets/images/flex.png) no-repeat center top;
+	}
+	&--blood {
+		background: url(../assets/images/blood.png) no-repeat center top;
+	}
+	&__title {
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		&--margin {
+			margin-bottom: 55px;
+		}
+	}
+	&__text {
+		font-size: 16px;
+		font-weight: 400;
+	}
+}

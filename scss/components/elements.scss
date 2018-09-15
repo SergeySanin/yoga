@@ -1,0 +1,28 @@
+.elements {
+	color: #fff;
+	background: url(../assets/images/elements_bg.png) no-repeat center center;
+	background-size: cover;
+	&__wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		 -webkit-box-pack: justify;
+		     -ms-flex-pack: justify;
+		         justify-content: space-between;
+	}
+	&__color {
+		background: rgba(83, 99, 219, 0.9);
+		height: 100%;
+		padding-top: 1px;
+		padding-top: 125px;
+		padding-bottom: 75px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+	}
+}
