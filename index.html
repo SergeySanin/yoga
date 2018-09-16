@@ -185,6 +185,109 @@
 			</div>
 		</div>
 	</section>
+	<section class="shop">
+		<div class="container">
+			<div class="shop__wrapper">
+				<div class="order">
+					<div class="order__header">
+						<p id="header-one">
+							<span>$ </span>
+							<span> 49</span>
+							<span>/month</span>
+						<p>
+					</div>
+					<form action="#" class="order__form">
+						<label for="day">Entry Date:mon-fri</label>
+						<input type="text" name="day">
+						<label for="time">Entry time:8A.M-8P.M</label>
+						<input type="text" name="time">
+						<p>nutrition: no</p>
+						<button id="btn-one" class="order__btn" type="submit">Buy now</button>
+					</form>
+				</div>
+						<div class="order">
+					<div class="order__header">
+						<p id="header-two">
+							<span>$ </span>
+							<span> 69</span>
+							<span>/month</span>
+						<p>
+					</div>
+					<form action="#" class="order__form">
+						<label for="day">Entry Date:mon-fri</label>
+						<input type="text" name="day">
+						<label for="time">Entry time:8A.M-8P.M</label>
+						<input type="text" name="time">
+						<p>nutrition: yes</p>
+						<button id="btn-two" class="order__btn" type="submit">Buy now</button>
+					</form>
+				</div>
+						<div class="order">
+					<div class="order__header">
+						<p id="header-three">
+							<span>$ </span>
+							<span> 99</span>
+							<span>/month</span>
+						<p>
+					</div>
+					<form action="#" class="order__form">
+						<label for="day">Entry Date:mon-fri</label>
+						<input type="text" name="day">
+						<label for="time">Entry time:8A.M-8P.M</label>
+						<input type="text" name="time">
+						<p>nutrition: yes</p>
+						<button id="btn-three" class="order__btn" type="submit">Buy now</button>
+					</form>
+				</div>
+			</div>
+			<div class="reviews">
+				<div class="vertical-center">
+					<div class="slick-slide clearfix">
+						<div class="reviews__avatar-border">
+							<img src="assets/images/avatar.jpg" alt="avatar" class="reviews__avatar">
+						</div>
+						<blockquote><span>"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.<span>"</span></blockquote>
+						<cite class="reviews__author"><span>Trainer</span><br>Laura Shepard</cite>
+					</div>
+					<div class="slick-slide clearfix">
+						<div class="reviews__avatar-border">
+							<img src="assets/images/avatar.jpg" alt="avatar" class="reviews__avatar">
+						</div>
+						<blockquote><span>"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.<span>"</span></blockquote>
+						<cite class="reviews__author"><span>Trainer</span><br>Laura Shepard</cite>
+					</div>
+					<div class="slick-slide clearfix">
+						<div class="reviews__avatar-border">
+							<img src="assets/images/avatar.jpg" alt="avatar" class="reviews__avatar">
+						</div>
+						<blockquote><span>"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.<span>"</span></blockquote>
+						<cite class="reviews__author"><span>Trainer</span><br>Laura Shepard</cite>
+					</div>
+					<div class="slick-slide clearfix">
+						<div class="reviews__avatar-border">
+							<img src="assets/images/avatar.jpg" alt="avatar" class="reviews__avatar">
+						</div>
+						<blockquote><span>"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.<span>"</span></blockquote>
+						<cite class="reviews__author"><span>Trainer</span><br>Laura Shepard</cite>
+					</div>					
+				</div>
+				<div class="small-slider">
+					<div class="slick-slide">
+						<img src="assets/images/trainer.png" alt="trainer">
+						<p>Sara Teylor<br><span>Trainer</span></p>
+					</div>
+					<div class="slick-slide">
+						<img src="assets/images/trainer.png" alt="trainer">
+						<p>Sara Teylor<br><span>Trainer</span></p>
+					</div>
+					<div class="slick-slide">
+						<img src="assets/images/trainer.png" alt="trainer">
+						<p>Sara Teylor<br><span>Trainer</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
 	<script src="js/jquery.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/lightcase.js"></script>
@@ -194,6 +297,14 @@
 		$('a[data-rel^=lightcase]').lightcase();
 	});
 </script>
-<script> $('.slider').slick();</script>
+<script>$('.slider').slick();</script>
+<script>$('.small-slider').slick();</script>
+<script>
+	$('.vertical-center').slick({
+  dots: true,
+  vertical: true,
+});
+</script>
+<script src="js/javascript.js"></script>
 </body>
 </html>

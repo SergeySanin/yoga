@@ -234,7 +234,7 @@ body {
   background-size: 47% 100%;
   text-align: left;
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
   .card--photo-health {
@@ -347,10 +347,6 @@ body {
     -webkit-border-radius: 7px;
             border-radius: 7px; }
 
-.slider {
-  width: 50%;
-  float: right; }
-
 .elements {
   color: #fff;
   background: url(../assets/images/elements_bg.png) no-repeat center center;
@@ -412,3 +408,223 @@ body {
   .advantage__text {
     font-size: 16px;
     font-weight: 400; }
+
+.shop {
+  min-height: 1150px;
+  background: url(../assets/images/shop_bg.png) no-repeat right bottom;
+  padding-bottom: 165px;
+  padding-top: 100px; }
+  .shop__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    margin-bottom: 100px; }
+
+.order {
+  text-transform: uppercase;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  -webkit-box-shadow: 0 0 50px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px 9px rgba(0, 0, 0, 0.1);
+  width: 31%;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 40px;
+  background: #fff; }
+  .order__header {
+    width: 100%;
+    height: 150px;
+    background: #5b6ceb;
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    margin-bottom: 50px; }
+    .order__header span:first-child {
+      font-size: 32px;
+      word-spacing: 10px;
+      position: relative;
+      top: -10px; }
+    .order__header span:nth-child(2) {
+      font-size: 67px; }
+    .order__header p {
+      position: relative;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+  .order__form label {
+    display: block; }
+  .order__form input {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #d7d7d7;
+    width: 100px; }
+  .order__form p {
+    margin-bottom: 45px; }
+  .order__btn {
+    width: 170px;
+    height: 50px;
+    background: #5b6ceb;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .order__btn:hover {
+    font-size: 20px;
+    font-weight: 700;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+  .order .hover {
+    text-shadow: 8px 8px 2px #000;
+    top: -8px;
+    left: -8px; }
+
+.reviews {
+  background: #fff;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  -webkit-box-shadow: 0 0 50px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px 9px rgba(0, 0, 0, 0.1);
+  position: relative; }
+  .reviews .vertical-center {
+    width: 960px;
+    margin-left: 60px; }
+  .reviews .slick-slide {
+    height: 175px;
+    width: 100%; }
+  .reviews .slick-dots {
+    width: 200px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: -185px;
+    top: -25px; }
+    .reviews .slick-dots button {
+      border: 2px solid #d7d7d7;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+      .reviews .slick-dots button:before {
+        display: none; }
+    .reviews .slick-dots .slick-active button {
+      border: 2px solid #5b6ceb;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+      .reviews .slick-dots .slick-active button:before {
+        content: "";
+        display: block;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        top: 5px;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        background: #5b6ceb; }
+  .reviews .slick-slider {
+    margin-bottom: 0; }
+  .reviews__avatar-border {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    float: left;
+    border: 2px solid #dadada;
+    margin-right: 90px;
+    position: relative; }
+    .reviews__avatar-border:after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 75px;
+      background: #dadada;
+      bottom: 0;
+      right: -50px; }
+  .reviews__avatar {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin: 10px; }
+  .reviews blockquote {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.7;
+    padding-top: 10px;
+    position: relative;
+    margin-bottom: 25px; }
+    .reviews blockquote span:first-child {
+      position: absolute;
+      color: #5b6ceb;
+      font-size: 60px;
+      top: -10px;
+      left: 185px; }
+    .reviews blockquote span:last-child {
+      position: absolute;
+      color: #5b6ceb;
+      font-size: 60px;
+      bottom: -60px;
+      right: 0px; }
+  .reviews .slick-arrow {
+    z-index: -100; }
+  .reviews__author {
+    color: #5b6ceb;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal; }
+    .reviews__author span {
+      font-size: 14px;
+      color: #777777;
+      font-weight: 400; }
+  .reviews .small-slider {
+    position: absolute;
+    width: 230px;
+    bottom: -37px;
+    height: 75px;
+    left: 330px; }
+    .reviews .small-slider .slick-slide {
+      width: 220px;
+      height: 75px;
+      padding: 0 15px; }
+    .reviews .small-slider .slick-arrow {
+      z-index: 2;
+      cursor: pointer;
+      position: absolute;
+      text-indent: -99999px;
+      border: none;
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      z-index: 4;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      -webkit-box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.1);
+      box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.1); }
+    .reviews .small-slider .slick-next {
+      right: -30px;
+      background: url("../assets/images/slick-next.png") no-repeat center center, #fff; }
+    .reviews .small-slider .slick-prev {
+      left: -30px;
+      background: url("../assets/images/slick-prev.png") no-repeat center center, #fff; }
+    .reviews .small-slider img {
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      border: 2px solid #dadada;
+      margin-right: 20px;
+      width: 70px;
+      height: 70px;
+      float: left; }
+    .reviews .small-slider p {
+      font-weight: 700;
+      font-size: 14px;
+      color: #555555;
+      padding-top: 15px; }
+      .reviews .small-slider p span {
+        font-weight: normal; }

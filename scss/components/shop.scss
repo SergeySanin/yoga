@@ -1,0 +1,15 @@
+.shop {
+	min-height: 1150px;
+	background: url(../assets/images/shop_bg.png) no-repeat right bottom;
+	padding-bottom: 165px;
+	padding-top: 100px;
+	&__wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		margin-bottom: 100px;
+	}
+}
