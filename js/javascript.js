@@ -21,3 +21,14 @@ $("#btn-three").mouseout(function() {
 	$("#header-three").removeClass("hover");
 });
 
+
+	$(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top-98
+        }, 1500);
+        e.preventDefault();
+        return false;
+    });
+});

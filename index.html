@@ -15,21 +15,21 @@
 			<img src="assets/images/logo.png" alt="Logo" class="header__logo">
 			<ul class="header__list clearfix">
 				<li class="header__item header__item--float-left">
-					<a href="#" class="header__link">About us</a></li>
+					<a href="#AboutUs" class="header__link">About us</a></li>
 				<li class="header__item header__item--float-left">
-					<a href="#" class="header__link">Reservation</a></li>
+					<a href="#Reservation" class="header__link">Reservation</a></li>
 				<li class="header__item header__item--float-left">
-					<a href="#" class="header__link">Gallery</a></li>
+					<a href="#SectionGallery" class="header__link">Gallery</a></li>
 				<li class="header__item header__item--float-right">
-					<a href="#" class="header__link">Shop</a></li>
+					<a href="#shop" class="header__link">Shop</a></li>
 				<li class="header__item header__item--float-right">
-					<a href="#" class="header__link">Elements</a></li>
+					<a href="#elements" class="header__link">Elements</a></li>
 				<li class="header__item header__item--float-right">
-					<a href="#" class="header__link">Blog</a></li>
+					<a href="#blog" class="header__link">Blog</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section class="banner">
+	<section class="banner" id="Reservation">
 		<div class="banner__color">
 			<div class="container clearfix">
 				<div class="callback">
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="programs">
+	<section class="programs" id="blog">
 		<div class="container">
 			<h2 class="programs__title">yoga feature program</h2>
 			<p class="programs__subtitle">Our Classes</p>
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="gallery">
+	<section class="gallery" id="SectionGallery">
 		<a href="assets/images/gallery/image1.jpg" data-rel="lightcase:myCollection" class="gallery__link">
 			<img src="assets/images/gallery/image1.jpg" alt="photo" class="gallery__image">
 			<span class="gallery__link-bg">
@@ -132,7 +132,7 @@
 			</span>
 		</a>
 	</section>
-	<section class="about">
+	<section class="about" id="AboutUs">
 		<div class="container clearfix">
 			<div class="about__description">
 				<h2 class="about__title">About us</h2>
@@ -145,7 +145,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="elements">
+	<section class="elements" id="elements">
 		<div class="elements__color">
 			<div class="container">
 				<div class="elements__wrapper">
@@ -185,7 +185,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="shop">
+	<section class="shop" id="shop">
 		<div class="container">
 			<div class="shop__wrapper">
 				<div class="order">
@@ -287,7 +287,45 @@
 				</div>
 			</div>
 		</div>
-	</section>	
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__data clearfix">
+				<div class="footer__aboutus">
+					<h3 class="footer__title">About</h3>
+					<p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m inim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p class="footer__social-icons">
+						<a href="#" class="footer__link footer__link--pinterest"></a>
+						<a href="#" class="footer__link footer__link--twitter" ></a>
+						<a href="#" class="footer__link footer__link--facebook"></a>
+						<a href="#" class="footer__link footer__link--googleplus"></a>
+						<a href="#" class="footer__link footer__link--instagram"></a>
+					</p>
+				</div>
+				<div class="footer__contact clearfix">
+					<h3 class="footer__title">Contact us</h3>
+					<div class="footer__connect">
+						<p class="footer__address"><a href="#" class="footer__address-link">5419 Joseph Mountains<br>Apt. 716</a></p>
+						<p class="footer__tel">
+							<a href="tel:+1 234 567 89" class="footer__tel-link">+1 234 567 89</a><br>
+							<a href="tel:+1 234 678 90" class="footer__tel-link">+1 234 678 90</a>
+						</p>
+					</div>
+					<div class="footer__connect">
+						<p class="footer__mail"><a href="mailto:#" class="footer__mail-link">joga.info@example.com</a>
+						</p>
+						<p class="footer__web">
+							<a href="#" class="footer__tel-link">www.example.com</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copyright">
+			<span>Copyright  ©  2016-2017 Yoga classes</span>
+			<p></p>
+		</div>
+	</footer>
 	<script src="js/jquery.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/lightcase.js"></script>
@@ -305,6 +343,7 @@
   vertical: true,
 });
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/javascript.js"></script>
 </body>
 </html>

@@ -1,0 +1,108 @@
+.footer {
+	background: #5b6ceb;
+	color: #fff;
+	text-align: left;
+	&__data {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	&__aboutus {
+		width: 50%;
+		float: left;
+	}
+	&__contact {
+		width: 50%;
+		float: left;
+		line-height: 1.6;
+	}
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-bottom: 55px;
+	}
+	&__text {
+		font-size: 14px;
+		margin-bottom: 70px;
+		line-height: 1.6;
+		max-width: 550px;
+	}
+	&__social-icons {
+		width: 180px;
+		text-align: justify;
+	}
+	&__link {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-size: cover;
+		&--pinterest {
+			background: url(../assets/images/pinterest.png) no-repeat center center;
+		}
+		&--twitter {
+			background: url(../assets/images/twitter.png) no-repeat center center;
+		}
+		&--facebook {
+			background: url(../assets/images/facebook.png) no-repeat center center;
+		}
+		&--googleplus {
+			background: url(../assets/images/googleplus.png) no-repeat center center;
+		}
+		&--instagram {
+			background: url(../assets/images/instagram.png) no-repeat center center;
+		}
+	}
+	&__connect {
+		float: left;
+		width: 50%;
+		font-size: 14px;
+	}
+	&__address {
+		padding-left: 40px;
+		background: url(../assets/images/marker.png) no-repeat left 5px;
+		margin-bottom: 30px;
+		&-link {
+			text-decoration: none;
+			color: #fff;
+		}
+	}	
+	&__tel {
+		padding-left: 40px;
+		background: url(../assets/images/phone.png) no-repeat left 5px;
+		&-link {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+	&__mail {
+		margin-bottom: 55px;
+		padding-left: 40px;
+		background: url(../assets/images/mail.png) no-repeat left center;
+		&-link {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+		&__web {
+		padding-left: 40px;
+		background: url(../assets/images/planet.png) no-repeat left center;
+		&-link {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+	&__copyright {
+		background: #5363d8;
+		padding-top: 45px;
+		padding-bottom: 45px;
+		text-align: center;
+		span {
+			font-size: 16px;
+			opacity: 0.7;
+		}
+		p {
+			margin-top: 40px;
+			min-height: 40px;
+			background: url(../assets/images/copy-logo.png) no-repeat center center;
+		}
+	}
+}
