@@ -1,6 +1,5 @@
 .card {
 	width: 48%;
-	height: 300px;
 	border-radius: 5px;
 	padding-left: 300px;
 	padding-top: 45px;
@@ -37,5 +36,43 @@
 	}
 	&__author {
 		color: #999999;
+	}
+	@include desktop-widths {
+		margin-bottom: 40px;
+	}
+	@include tablet-widths {
+		background-size: 100% 50%;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 270px;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		&__title {
+			margin-bottom: 15px;
+		}
+		&__text {
+			max-width: 100%;
+		}
+	}
+	@include mobile-widths {
+		width: 100%;
+		max-width: 425px;
+		background-size: 70% 50%;
+	    background-position: center 40px;
+	    padding-top: 300px;
+	    max-width: 425px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    &__title {
+	    	text-align: center;
+	    }
+	}
+	@include extra-small-widths {
+		background-size: 100% 50%;
+    	background-position: center top;
+    	padding-top: 225px;
+    	&__text {
+    		text-align: justify;
+    	}
 	}
 }

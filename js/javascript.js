@@ -1,3 +1,21 @@
+// Настройка поля ввода под тип select
+
+$("#ChoseClass").click(function() {
+	$(".callback__list").slideToggle(500);
+});
+
+$(".callback__item").click(function() {
+	$(".callback__list").slideToggle(500);
+});
+
+$(".callback__item").click(function() {
+	var val = $(this).html();
+	$(".callback__input--select").val(val);
+});
+
+
+// Анимация кнопки и шапки на карточке заказа
+
 $("#btn-one").mouseover(function() {
 	$("#header-one").addClass("hover");
 });
@@ -21,6 +39,7 @@ $("#btn-three").mouseout(function() {
 	$("#header-three").removeClass("hover");
 });
 
+// Скрипт для плавного скроллинга по якорям
 
 	$(document).ready(function(){
     $("a[href*=#]").on("click", function(e){

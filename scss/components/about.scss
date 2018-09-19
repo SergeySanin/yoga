@@ -8,7 +8,7 @@
 	}
 	&__title {
 		text-transform: uppercase;
-		color: #5b6ceb;
+		color: $blue;
 		font-size: 30px;
 		font-weight: 700;
 		margin-bottom: 30px;
@@ -52,5 +52,72 @@
 		width: 570px;
 		height: 300px;
 		border-radius: 7px;
+	}
+		@media (max-width: 1300px) {
+		.slider {
+			margin-right: 15px;
+		}
+	}
+	@include desktop-widths {
+		.slider {
+			width: 45%;
+			margin-right: 20px;
+			.slick-arrow {
+				width: 40px;
+				height: 40px;
+			}
+			.slick-next {
+				right: -15px;
+			}
+			.slick-prev {
+				left: -15px;
+			}
+		}
+		&__description {
+			width: 45%;
+		}
+		.slick-slider img {
+			width: 100%;
+		}
+	}
+	@include tablet-widths {
+		padding-top: 90px;
+		padding-bottom: 90px;
+		&__description {
+			width: 45%;
+		}
+		.slider {
+			height: 225px;
+		}
+		.slick-slider img {
+			height: 225px;
+		}
+	}
+	@include mobile-widths {
+		padding-top: 55px;
+		&__description {
+			width: 100%;
+			float: none;
+		}
+		&__title {
+			text-align: center;
+		}
+		&__text {
+			margin-left: auto;
+		    margin-right: auto;
+		    margin-bottom: 55px;
+		}
+		.slider {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%; 
+		}
+	}
+	@include extra-small-widths {
+		padding-top: 30px;
+		&__text {
+			text-align: justify;
+		}
 	}
 }

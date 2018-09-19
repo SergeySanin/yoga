@@ -1,10 +1,26 @@
 .banner {
 	margin-top: 99px;
-	background: url(../assets/images/banner_bg.png) no-repeat, #5363db;
+	background: url(../assets/images/banner_bg.png) no-repeat, $darkblue;
 	background-position-x: -295px;
 	&__color {
 		background: rgba(83, 99, 219, 0.9);
 		height: 100%;
 		padding-top: 1px;
+	}
+	@include desktop-widths {
+		background-position-x: -495px;
+	}
+	@include tablet-widths {
+		background-position: -665px -30px;
+	}
+	@include mobile-widths {
+		background-size: auto 100%;
+		background-position: center;
+	}
+	@media (max-width: 499px) {
+		background-position-x: -1565px;
+	}
+	@include extra-small-widths {
+		background-position-x:  -1230px;
 	}
 }

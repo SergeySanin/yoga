@@ -1,5 +1,5 @@
 .footer {
-	background: #5b6ceb;
+	background: $blue;
 	color: #fff;
 	text-align: left;
 	&__data {
@@ -103,6 +103,92 @@
 			margin-top: 40px;
 			min-height: 40px;
 			background: url(../assets/images/copy-logo.png) no-repeat center center;
+		}
+	}
+	@include desktop-widths {
+		&__text {
+			max-width: 80%;
+		}
+	}
+	@include tablet-widths {
+		&__data {
+			padding-top: 65px;
+			padding-bottom: 65px;
+		}
+		&__copyright {
+		    padding-top: 30px;
+		    padding-bottom: 30px;
+		 p {
+			margin-top: 25px;
+			}
+		}
+	}
+	@include mobile-widths {
+		&__connect {
+			width: 50%;
+		}
+		&__aboutus {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		&__data {
+			padding-top: 20px;
+			padding-bottom: 45px;
+		}
+		&__title {
+			margin-bottom: 30px;
+			text-align: center;
+			float: none;
+		}
+		&__text {
+			margin-bottom: 40px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__social-icons {
+			width: 100%;
+			text-align: center;
+		}
+		&__link {
+			margin: 0 20px
+		}
+		&__contact {
+			float: none;
+			width: 100%;
+			margin-top: 55px;
+			padding: 0 20px;
+		}
+	}
+	@media (max-width: 499px) {
+		&__contact {
+			padding: 0;
+		}
+		&__address {
+			padding-left: 30px;
+		}
+		&__tel {
+			padding-left: 30px;
+		}
+	}
+	@include extra-small-widths {
+		&__link {
+			margin: 0 10px;
+		}
+		&__connect {
+			float: none;
+			width: 100%;
+		}
+		&__address, &__tel, &__mail, &__web {
+			margin-left: auto;
+		    margin-right: auto;
+		    width: 70%;
+		    margin-bottom: 20px;
+		}
+		&__data {
+			padding-bottom: 10px;
+		}
+		&__text {
+			text-align: justify;
 		}
 	}
 }

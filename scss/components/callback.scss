@@ -1,6 +1,5 @@
 .callback {
 	width: 300px;
-	height: 390px;
 	background: #fff;
 	border-radius: 15px;
 	margin-top: 100px;
@@ -11,12 +10,13 @@
 	float: left;
 	&__title {
 		font-size: 26px;
-		color: #5363db;
+		color: $darkblue;
 		text-align: left;
 		margin-bottom: 25px;
 	}
 	&__form {
 		text-align: right;
+		position: relative;
 	}
 	&__input {
 		width: 100%;
@@ -29,9 +29,40 @@
 			font-size: 14px;
 			font-family: "Open Sans";
 		}
-		option {
-			font-size: 14px;
-			font-family: "Open Sans";
+		&--select {
+			background: url(../assets/images/togle.png) no-repeat 90% center, #f2f2f2;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	&__list {
+		text-align: left;
+		background: #f2f2f2;
+		position: absolute;
+		left: 0;
+		top: 180px;
+		width: 100%;
+		border-radius: 6px;
+		display: none;
+	}
+	&__item {
+		list-style: none;
+		padding: 5px 10px;
+		border: 1px solid #fff;
+		-webkit-transition: all 0.2s;
+			-o-transition: all 0.2s;
+			transition: all 0.2s;
+		&:last-child {
+			border-bottom: none;
+			border-radius: 0 0 6px 6px;
+		}
+		&:hover {
+			background: $darkblue;
+			color: #fff;
+			cursor: pointer;
+			border-color: $darkblue;
+
 		}
 	}
 	&__button {
@@ -42,13 +73,40 @@
 		border-radius: 6px;
 		border: none;
 		text-align: center;
-		background: #5b6ceb;
+		background: $blue;
 		color: #fff;
 		font-size: 16px;
 		font-family: "Open Sans";
 		font-weight: 700;
 		&:hover {
 			cursor: pointer;
+		}
+	}
+	@include desktop-widths {
+		margin-left: 90px;
+	}
+	@include tablet-widths {
+		margin-left: 0px;
+		margin-top: 60px;
+		margin-right: 50px;
+	}
+	@include mobile-widths {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		max-width: 425px;
+		margin-bottom: 80px;
+	}
+	@include extra-small-widths {
+		width: 80%;
+		padding: 15px 20px 25px 15px;
+		margin-bottom: 45px;
+		&__input {
+			padding: 10px 10px;
+		}
+		&__title {
+			margin-bottom: 15px;
 		}
 	}
 }

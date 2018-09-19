@@ -1,4 +1,39 @@
-@mixin container {
-  width: 1170px;
-  margin: 0 auto;
-}
+@mixin desktop-widths {
+ 	@media (max-width: $screen-larger) {
+ 		@content
+ 	}
+ }
+  @mixin tablet-widths {
+ 	@media (max-width: $screen-medium) {
+ 		@content
+ 	}
+ }
+ @mixin mobile-widths {
+ 	@media (max-width: $screen-small) {
+ 		@content
+ 	}
+ }
+ @mixin extra-small-widths {
+ 	@media (max-width: $extra-small) {
+ 		@content
+ 	}
+ }
+
+
+
+ @mixin container {
+ 	width: 1170px;
+  	margin: 0 auto;
+ 	@include desktop-widths {
+ 		width: 970px;
+ 		margin: 0 auto;
+ 	}
+ 	@include tablet-widths {
+ 		width: 750px;
+ 		margin: 0 auto;
+ 	}
+ 	@include mobile-widths {
+	    width: 100%;
+	    padding: 10px;
+ 	}	
+ }

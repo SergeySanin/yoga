@@ -14,4 +14,35 @@
 		font-family: "Freestyle Script";
 		font-size: 40px;
 	}
+	@include tablet-widths {
+		max-width: 400px;
+		margin-top: 80px;
+		&__title {
+			font-size: 45px;
+			line-height: 1.2;
+		}
+	}
+	@include extra-small-widths {
+		&__title {
+			font-size: 29px;
+		}
+	}
+}
+.mobile-only--show {
+	display: none;
+}
+@include mobile-widths {
+	.mobile-only {
+		&--hidden {
+			display: none;
+		}
+		&--show {
+			display: block;
+			float: none;
+			margin-top: 45px;
+			width: 100%;
+			max-width: 100%;
+			text-align: center;
+		}
+	}
 }

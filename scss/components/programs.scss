@@ -1,11 +1,10 @@
 .programs {
-	height: 1030px;
 	padding-top: 125px;
-	padding-bottom: 80px;
+	padding-bottom: 30px;
 	color: #777;
 	&__title {
 		text-transform: uppercase;
-		color: #5b6ceb;
+		color: $blue;
 		font-size: 30px;
 		font-weight: 700;
 		margin-bottom: 15px;
@@ -30,5 +29,17 @@
 		        justify-content: space-between;
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
+	}
+	@include tablet-widths {
+		padding-top: 65px;
+	}
+	@include extra-small-widths {
+		padding-top: 25px;
+		&__wrapper {
+			margin-top: 45px;
+		}
+		&__title {
+			font-size: 25px;
+		}
 	}
 }

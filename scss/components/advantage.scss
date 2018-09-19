@@ -40,4 +40,35 @@
 		font-size: 16px;
 		font-weight: 400;
 	}
+	@include tablet-widths {
+		&__title {
+			font-size: 17px;
+			&--margin {
+			margin-bottom: 48px;
+		}
+		}
+	}
+	@include mobile-widths {
+		width: 46%;
+		&__title {
+			font-size: 13px;
+			&--margin {
+				margin-bottom: 43px;
+			}
+		}
+		&__text {
+			font-size: 13px;
+		}
+	}
+	@include extra-small-widths {
+		width: 100%;
+		&--blood {
+			margin-bottom: 35px;
+		}
+		&__title {
+			&--margin {
+				margin-bottom: 25px;
+			}
+		}
+	}
 }

@@ -25,4 +25,34 @@
 		display: -webkit-box;
 		display: -ms-flexbox;
 	}
+	@include desktop-widths {
+		background-position-x: -640px;
+	}
+	@include tablet-widths {
+		    background-position-x: -770px;
+		&__color {
+			padding-top: 70px;
+			padding-bottom: 35px;
+		}
+	}
+	@include mobile-widths {
+		background-size: auto 100%;
+		background-position: center;
+	    background-position-x: -1510px;
+		&__color {
+			padding-bottom: 15px;
+		}
+	}
+	@media (max-width: 499px) {
+		background-position-x: -1725px;
+	}
+	@include extra-small-widths {
+		background-position-x: -2775px;
+		&__color {
+			padding-top: 30px;
+		}
+		br {
+			display: none;
+		}
+	}
 }

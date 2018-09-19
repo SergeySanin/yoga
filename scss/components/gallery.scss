@@ -43,4 +43,38 @@
 		border-radius: 50%;
 		background: url(../assets/images/look-icon.png) no-repeat center center, #fff;
 	}
+
+	@media (max-width: 1920px) {
+		&__link {
+			max-height: 300px;
+		}
+		&__image {
+			min-height: 300px;
+		}
+	}
+		@media (max-width: 1400px) {
+		&__image {
+			min-height: 250px;
+		}
+	}
+			@media (max-width: 1300px) {
+		&__image {
+			min-height: 210px;
+		}
+	}
+	@include mobile-widths {
+		&__link {
+			width: 50%;
+		}
+	}
+	@media (max-width: 499px) {
+		&__image {
+			min-height: 180px;
+		}
+	}
+	@include extra-small-widths {
+		&__image {
+			min-height: 150px;
+		}
+	}
 }

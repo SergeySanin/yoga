@@ -10,11 +10,10 @@
 	background: #fff;
 	&__header {
 		width: 100%;
-		height: 150px;
-		background: #5b6ceb;
+		background: $blue;
 		color: #fff;
 		padding-top: 25px;
-		padding-bottom: 50px;
+		padding-bottom: 33px;
 		font-weight: 700;
 		margin-bottom: 50px;
 		span:first-child {
@@ -50,7 +49,7 @@
 	&__btn {
 		width: 170px;
 		height: 50px;
-		background: #5b6ceb;
+		background: $blue;
 		border-radius: 15px;
 		border: none;
 		color: #fff;
@@ -72,5 +71,26 @@
 		text-shadow: 8px 8px 2px #000;
 		top: -8px;
 		left: -8px;
+	}
+	@include mobile-widths {
+		width: 100%;
+		max-width: 425px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	@include extra-small-widths {
+		&__header {
+			padding-top: 15px;
+		    padding-bottom: 20px;
+		    margin-bottom: 20px;
+			span:nth-child(2) {
+				font-size: 50px;
+			}
+		}
+		&__form {
+			p {
+				margin-bottom: 25px;
+			}
+		}
 	}
 }

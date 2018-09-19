@@ -32,22 +32,26 @@
 	<section class="banner" id="Reservation">
 		<div class="banner__color">
 			<div class="container clearfix">
+				<div class="slogan mobile-only--show">
+					<h1 class="slogan__title">just balance<br>your mind & body</h1>
+					<p class="slogan__text">Create the healthy living<br> for yourself</p>
+				</div>
 				<div class="callback">
 					<h3 class="callback__title">Trial Class</h3>
 					<form action="#" class="callback__form">
-						<input type="text" class="callback__input" placeholder="Enter your name">
-						<input type="tel" class="callback__input" placeholder="Enter your phone">
-						<select name="class" id="ChoseClass" class="callback__input">
-							<option value="chose" disabled selected>Chose your class</option>
-							<option value="health">Health</option>
-							<option value="children">Children</option>
-							<option value="wright">Lose Weight</option>
-							<option value="old">Elderly</option>
-						</select>
+						<input type="text" class="callback__input" placeholder="Enter your name" maxlength="20" required>
+						<input  type="number" class="callback__input" placeholder="Enter your phone" required>
+						<input type="text" name="class" id="ChoseClass" class="callback__input callback__input--select" placeholder="Chose your class"readonly>
+						<ul class="callback__list">
+							<li class="callback__item">Health</li>
+							<li class="callback__item">Children</li>
+							<li class="callback__item">Lose Weight</li>
+							<li class="callback__item">Elderly</li>
+						</ul>
 						<input type="submit" value="Try it" class="callback__button">
 					</form>
 				</div>
-				<div class="slogan">
+				<div class="slogan mobile-only--hidden">
 					<h1 class="slogan__title">just balance<br>your mind & body</h1>
 					<p class="slogan__text">Create the healthy living<br> for yourself</p>
 				</div>
@@ -198,9 +202,9 @@
 					</div>
 					<form action="#" class="order__form">
 						<label for="day">Entry Date:mon-fri</label>
-						<input type="text" name="day">
+						<input type="text" name="day" maxlength="10"  required>
 						<label for="time">Entry time:8A.M-8P.M</label>
-						<input type="text" name="time">
+						<input type="number" name="time" required>
 						<p>nutrition: no</p>
 						<button id="btn-one" class="order__btn" type="submit">Buy now</button>
 					</form>
@@ -215,9 +219,9 @@
 					</div>
 					<form action="#" class="order__form">
 						<label for="day">Entry Date:mon-fri</label>
-						<input type="text" name="day">
+						<input type="text" name="day" maxlength="10" required>
 						<label for="time">Entry time:8A.M-8P.M</label>
-						<input type="text" name="time">
+						<input type="number" name="time" required>
 						<p>nutrition: yes</p>
 						<button id="btn-two" class="order__btn" type="submit">Buy now</button>
 					</form>
@@ -232,9 +236,9 @@
 					</div>
 					<form action="#" class="order__form">
 						<label for="day">Entry Date:mon-fri</label>
-						<input type="text" name="day">
+						<input type="text" name="day" maxlength="10" required>
 						<label for="time">Entry time:8A.M-8P.M</label>
-						<input type="text" name="time">
+						<input type="number" name="time" required>
 						<p>nutrition: yes</p>
 						<button id="btn-three" class="order__btn" type="submit">Buy now</button>
 					</form>
